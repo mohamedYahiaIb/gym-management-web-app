@@ -9,7 +9,7 @@ interface InputProps {
 function Input({ label, type = "text", value, onChange, placeholder }: InputProps) {
     return (
         <div className="mb-4">
-            <label className="block text-sm font font-medium text-gray-700 mb-1">
+            <label className="block text-sm font font-medium text-gray-200 mb-1">
                 {label}
             </label>
             <input

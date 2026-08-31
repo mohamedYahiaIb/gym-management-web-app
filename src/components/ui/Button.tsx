@@ -7,7 +7,7 @@ interface ButtonProps {
 
 function Button({ children, onClick, type = "button", variant = "primary" }: ButtonProps) {
 
-    const buttonClasses = variant === "primary" ? "bg-blue-600 text-white hover:bg-blue-700" : "bg-gray-200 text-gray-800 hover:bg-gray-300";
+    const buttonClasses = variant === "primary" ? "w-full rounded-md font-semibold bg-orange-400 text-white hover:bg-orange-500" : "w-full rounded-md font-semibold bg-gray-200 text-gray-800 hover:bg-gray-300";
 
     return (
         

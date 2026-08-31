@@ -35,7 +35,7 @@ function LoginForm() {
                 type="submit"
                 variant="primary"
             >
-                Submit
+                Sign In
             </Button>
         </form>
     )
