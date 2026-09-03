@@ -1,6 +1,7 @@
 import Input from "../../../components/ui/Input";
 import Button from "../../../components/ui/Button";
 import React, { useState } from "react";
+import { Mail, Lock } from "lucide-react";
 
 function LoginForm() {
     
@@ -16,19 +17,23 @@ function LoginForm() {
     return (
         <form onSubmit={handleSubmit}>
             <Input
-                label="Email"
+                label="Email address"
                 value={email}
                 type="email"
                 onChange={setEmail}
                 placeholder="you@fitcorepro.com"
+                icon={<Mail size={18} className="mt-1 text-gray-300" />}
             />
 
+            
             <Input
                 label="Password"
                 value={password}
                 type="password"
                 onChange={setPassword}
+                labelExtra={<a href="#" className="text-orange-400 text-[14px] hover:underline">Forgot password?</a>}
                 placeholder="••••••••"
+                icon={<Lock size={18} className="text-gray-300" />}
             />
 
             <Button
@@ -42,4 +47,3 @@ function LoginForm() {
 }
 
 export default LoginForm;
-
