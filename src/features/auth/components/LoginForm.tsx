@@ -1,8 +1,7 @@
 import Input from "../../../components/ui/Input";
 import Button from "../../../components/ui/Button";
 import React, { useState } from "react";
-import { Mail, Lock } from "lucide-react";
-import { Check } from "lucide-react";
+import { Mail, Lock, Check } from "lucide-react";
 
 function LoginForm() {
     
@@ -14,7 +13,6 @@ function LoginForm() {
         e.preventDefault();
         console.log(email, password);
     } 
-
 
     return (
         <form onSubmit={handleSubmit}>
@@ -42,9 +40,18 @@ function LoginForm() {
                     type="checkbox"
                     checked={rememberMe}
                     onChange={() => setRememberMe(!rememberMe)}
-                    className={`ml-1 w-4 h-4 appearance-none bg-gray-800 border border-gray-700 rounded checked:bg-gray-800 checked:border-orange-500 checked:bg-[${<Check />}] checked:bg-no-repeat checked:bg-center cursor-pointer`}
+                    className={`ml-1 w-4 h-4 appearance-none bg-gray-800 border border-gray-700 rounded checked:bg-gray-800 checked:border-orange-500  checked:bg-no-repeat checked:bg-center cursor-pointer`}
                 />
-                <label className="text-white pb-0.5">Remember me</label>
+
+                { rememberMe && (
+                    <Check 
+                        size={15}
+                        strokeWidth={3}
+                        className="absolute top-44.25 left-1.25 text-orange-500 pointer-events-none" 
+                    />
+                )}
+
+                <label className="text-white pb-0.5">Remember me?</label>
             </div>
 
             <Button
