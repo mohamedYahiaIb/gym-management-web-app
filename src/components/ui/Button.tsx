@@ -7,7 +7,7 @@ interface ButtonProps {
 
 function Button({ children, onClick, type = "button", variant = "primary" }: ButtonProps) {
 
-    const buttonClasses = variant === "primary" ? "w-full py-2 rounded-md font-semibold bg-orange-400 text-black hover:bg-orange-500" : "w-full py-2 rounded-md font-semibold bg-gray-200 text-gray-800 hover:bg-gray-300";
+    const buttonClasses = variant === "primary" ? "w-full py-2 rounded-md font-semibold bg-orange-400/90 text-black hover:bg-orange-400/75" : "w-full py-2 rounded-md font-semibold bg-gray-200 text-gray-800 hover:bg-gray-300";
 
     return (
         
