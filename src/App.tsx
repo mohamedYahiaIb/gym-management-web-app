@@ -1,10 +1,10 @@
-import LoginForm from "./features/auth/components/LoginForm";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
     <>
       <div>
-        <LoginForm />
+        <LoginPage />
       </div>
     </>
   )
