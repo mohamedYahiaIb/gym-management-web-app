@@ -3,11 +3,13 @@ import BrandingPanel from "../features/auth/components/BrandingPanel";
 
 function LoginPage() {
     return (
-        <div className="flex flex-row-reverse">
-                
-            <LoginForm />
-            
-            <BrandingPanel />
+        <div className="w-full flex flex-row-reverse">
+            <div className="w-full lg:w-1/2 flex items-center justify-center px-6">
+                <LoginForm />
+            </div>
+            <div className="w-1/2 hidden lg:flex lg:w-1/2">
+                <BrandingPanel />
+            </div>
         </div>
     )
 }

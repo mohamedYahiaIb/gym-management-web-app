@@ -5,7 +5,7 @@ function BrandingPanel() {
 
     return(
         <div
-            className="flex flex-col gap-2 p-12 w-full h-screen bg-linear-to-br from-orange-950/40 via-gray-900 to-gray-950"
+            className="w-full flex flex-col gap-2 p-12 h-screen bg-linear-to-br from-orange-950/40 via-gray-900 to-gray-950"
         >
             <div className="flex flex-row items-center gap-2">
 
@@ -27,7 +27,7 @@ function BrandingPanel() {
                 <StatCard value="+52" label="Daily check-ins" />
             </div>
 
-            <div className="bg-gray-800/20 border border-gray-600 rounded-lg p-6">
+            <div className="w-3/4 bg-gray-800/20 border border-gray-600 rounded-lg p-6">
                 <p className="text-gray-400 mb-4">"FitCore Pro transformed how we manage our gym. Member retention is up 22% and our staff saves hours every week."</p>
                 <div className="flex flex-row items-center gap-2">
                     <div className="flex items-center justify-center bg-orange-500 w-8 h-8 rounded-full text-white font-medium text-[14px]">JM</div>

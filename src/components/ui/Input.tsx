@@ -36,7 +36,7 @@ function Input({ label, type = "text", value, onChange, placeholder, labelExtra,
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
                     placeholder={placeholder}
-                    className="w-full pl-10 px-3 py-2 bg-[#13131c] text-gray-200 font-light tracking-wider border border-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500/40 transition duration-300"
+                    className="w-full pl-10 px-3 py-2 bg-[#13131c] text-gray-200 font-light tracking-wider border border-gray-800/60 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500/40 transition duration-300"
                 />
 
                 { type === "password" && (
