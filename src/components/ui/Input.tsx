@@ -22,7 +22,7 @@ function Input({ label, type = "text", value, onChange, placeholder, labelExtra,
     return (
         <div className="mb-4">
             <div className="flex justify-between mb-1">
-                <label className="block text-sm font font-medium text-gray-200 mb-1">{label}</label>
+                <label className="block text-sm font  text-gray-200 mb-1">{label}</label>
                 {labelExtra}
             </div>
 
@@ -42,7 +42,7 @@ function Input({ label, type = "text", value, onChange, placeholder, labelExtra,
                 { type === "password" && (
                     <button
                         onClick={() => setShowPassword(!showPassword)}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600 hover:text-gray-100"
                     >
                         { !showPassword ? <Eye size={18} /> : <EyeOff size={18} /> }
                     </button>

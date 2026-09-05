@@ -3,7 +3,7 @@ import LoginForm from "./features/auth/components/LoginForm";
 function App() {
   return (
     <>
-      <div className="bg-[#0b0b12]" >
+      <div className="min-h-screen flex">
         <LoginForm />
       </div>
     </>
