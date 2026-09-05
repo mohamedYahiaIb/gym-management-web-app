@@ -22,7 +22,7 @@ function Input({ label, type = "text", value, onChange, placeholder, labelExtra,
     return (
         <div className="mb-4">
             <div className="flex justify-between mb-1">
-                <label className="block text-sm font  text-gray-200 mb-1">{label}</label>
+                <label className="block text-sm font-medium tracking-wider text-gray-200 mb-1">{label}</label>
                 {labelExtra}
             </div>
 
