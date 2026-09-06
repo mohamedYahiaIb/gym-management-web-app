@@ -7,7 +7,7 @@ function BrandingPanel() {
         <div
             className="w-full flex flex-col gap-2 p-12 h-screen bg-linear-to-br from-orange-950/40 via-gray-900 to-gray-950"
         >
-            <div className="flex flex-row items-center gap-2">
+            <div className="flex flex-row items-center gap-2 mb-8">
 
                 <div className="bg-orange-500 p-2 rounded-lg">
                     <Dumbbell className="text-white -scale-x-100" size={20} />
@@ -16,12 +16,12 @@ function BrandingPanel() {
                 <p className="text-white font-medium font-sans ">FitCore Pro</p>
             </div>
 
-            <div className="mb-5">
+            <div className="w-125 mb-8">
                 <p className="text-white font-medium text-[33px] mb-5">MANAGE YOUR GYM WITH CONFIDENCE.</p>
                 <p className="text-gray-500 text-justify">Everything you need to run a professional gym members, trainers, attendance, and revenue in one place.</p>
             </div>
 
-            <div className="w-full flex flex-row gap-4 mb-4">
+            <div className="w-full flex flex-row gap-8 mb-4">
                 <StatCard value="+152" label="Active members" />
                 <StatCard value="+50,000 DZD" label="Monthly revenue" />
                 <StatCard value="+52" label="Daily check-ins" />

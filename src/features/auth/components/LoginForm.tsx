@@ -15,7 +15,7 @@ function LoginForm() {
     } 
 
     return (
-        <div className="w-screen mx-auto p-20 m-5">
+        <div className="w-150 mx-auto px-20 mt-5">
             <form onSubmit={handleSubmit}>
                 <Input
                     label="Email address"
